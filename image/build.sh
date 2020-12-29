@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "http://alpine.gliderlabs.com/alpine/v3.5/community" >> /etc/apk/repositories
+echo "https://dl-cdn.alpinelinux.org/alpine/v3.5/community" >> /etc/apk/repositories
 apk add --update 'go>1.7' git mercurial build-base ca-certificates
 
 mkdir -p /go/src/github.com/gliderlabs
